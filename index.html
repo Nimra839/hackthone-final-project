@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Sign Up Navbar</title>
+  <link rel="stylesheet" href="stylenav.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-logo">TASK TRACKING APP</a>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <div class="navbar-menu" id="navMenu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Experience</a>
+      </div>
+
+      <div class="btndiv">
+        <a href="index01.html" class="navbar-button">Sign up</a>
+        <a href="index02.html" class="navbar-button">Log in</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- Intro Section -->
+  <div class="intro-section">
+    <h2>Welcome to the Task Tracking App</h2>
+    <p>Stay organized and manage your tasks effortlessly. Whether you are working on personal projects or managing tasks for work, this app helps you keep track of your progress and stay productive.</p>
+  </div>
+
+
+
+   <div class="board">
+    <!-- To Do Column -->
+    <div class="column" id="todo-column">
+       <h2>To Do</h2>
+      <div class="task-list" id="todo-tasks"></div>
+          <button class="add-task-btn" onclick="addTask('todo')">+ Add Task</button>
+    </div>
+
+    <!-- In Progress Column -->
+    <div class="column" id="inprogress-column">
+      <h2>In Progress</h2>
+      <div class="task-list" id="inprogress-tasks"></div>
+    </div>
+
+    <!-- Done Column -->
+    <div class="column" id="done-column">
+      <h2>Done</h2>
+      <div class="task-list" id="done-tasks"></div>
+    </div>
+  </div>
+
+  
+  
+
+  <script src="scriptnav.js"></script>
+</body>
+</html>

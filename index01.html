@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=+device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-box">
+    <h2>Sign Up</h2>
+    <input type="text" id="fullname" placeholder="Full Name" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button onclick="signup()">Create Account</button>
+
+               <p>OR</p>
+
+
+    <button onclick="signInWithGoogle()" style="background: #2a6ebf; color: white; margin-top: 10px;">Sign in with Google</button>
+
+    <div class="link">
+      Already have an account? <a href="index02.html">Login</a>
+    </div>
+  </div>
+
+  
+  <script type="module" src="script.js"></script>
+</body>
+</html>
